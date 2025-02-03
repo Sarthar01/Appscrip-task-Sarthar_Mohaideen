@@ -3,6 +3,6 @@
 
 # local env files
 .env*.local
-
-
-node_modules
+.env
+/dist/
+*.log
