@@ -2,9 +2,6 @@
 
 
 # local env files
-.env*.local
-.env
-/dist/
-*.log
 node_modules/
-node_modules
+.env
+.next/
