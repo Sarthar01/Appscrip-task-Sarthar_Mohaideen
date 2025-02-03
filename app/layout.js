@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Email Sender App",
-  description: "A Next.js app for sending emails.",
+  title: "Appscrip task",
+  description: "A Next.js evalution task for Appscrip",
 };
 
 export default function RootLayout({ children }) {

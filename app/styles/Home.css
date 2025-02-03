@@ -1,0 +1,263 @@
+/* styles/Home.css */
+
+/* Main container with full-width */
+.main {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Consider padding in width calculation */
+}
+.main .header {
+  margin-bottom: 20px; /* Add space between header and container */
+}
+
+/* Header styling with padding and line */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 20px 20px; /* Added top and bottom padding */
+  font-size: 14px;
+  width: 85%;
+  border-top: 2px solid #e0e0e0; /* Greyish-white line at the top */
+  border-bottom: 2px solid #e0e0e0; /* Greyish-white line at the bottom */
+}
+
+.header .totalItems {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Filter section toggle style */
+.filterToggle {
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  
+  gap: 50px;
+}
+
+/* Sort dropdown button styling */
+.sortDropdown {
+  position: relative;
+}
+
+.sortDropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  right: 0;
+  z-index: 1;
+}
+
+.sortDropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent span {
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdownContent span:hover {
+  background-color: #f0f0f0;
+}
+.customCheckbox{
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+
+.sidebar {
+  width: 250px;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+  box-sizing: border-box;
+}
+
+
+.filterSection {
+  padding: 10px;
+  border-bottom: 1px solid #818181;
+  width: 100%; }
+
+.filterSection h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold; 
+}
+
+.filterOptions {
+  display: none;
+  padding-left: 10px;
+}
+
+.filterSection.active .filterOptions {
+  display: block;
+}
+
+.filterSection label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold; 
+}
+
+
+.productsGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.cardContent {
+  padding: 10px;
+}
+
+.cardContent h2 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.cardContent p {
+  font-size: 12px;
+  color: #666;
+}
+
+
+.wishlist {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+.wishlist.red {
+  color: red;
+}
+
+
+.unselectButton {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.unselectButton:hover {
+  background-color: #ddd;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterSection .filterLabel {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.filterLabels{
+  font-size: 12px; 
+}
+
+.unselectAllBtn {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.unselectAllBtn:hover {
+  color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .productsGrid {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .main {
+    width: 100%;
+  }
+}

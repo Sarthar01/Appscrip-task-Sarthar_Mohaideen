@@ -1,13 +1,15 @@
+"use client"
 import "./globals.css";
-import MainContent from "./components/email-sender";
+import Home from "./components/main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import '../styles/fonts.css';
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div >
       <Navbar />
-      <MainContent/>
+      <Home />
       <Footer />
     </div>
   );

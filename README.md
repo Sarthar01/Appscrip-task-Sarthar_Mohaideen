@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Product Filtering & Sorting
+
+This project is a simple e-commerce front-end application that fetches product data from the [FakeStoreAPI](https://fakestoreapi.com/products). It provides features like filtering, sorting, and adding products to a wishlist.
+
+## Features
+
+- **Product Listing**: Displays a list of products fetched from the API.
+- **Filters**: Filter products by various categories such as "Ideal For", "Occasion", "Work", "Fabric", "Segment", etc.
+- **Sorting**: Sort products by price, popularity, and newest.
+- **Wishlist**: Mark products as favorites (wishlist functionality).
+- **Customizable Filter**: Option to filter by customizable products.
+- **Responsive Layout**: Fully responsive for mobile and tablet devices.
+
+## Tech Stack
+
+- **Frontend**: React.js (with hooks like `useState`, `useEffect`)
+- **API**: [FakeStoreAPI](https://fakestoreapi.com/products)
+- **CSS**: Plain CSS (no CSS frameworks)
+- **Deployment**: Can be deployed to platforms like Netlify or Vercel.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/) (v14.x or higher)
+- [npm](https://npmjs.com/) (or [yarn](https://yarnpkg.com/))
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone this repository:
 
-## Learn More
+   git clone https://github.com/Sarthar01/Appscrip-task-Sarthar_Mohaideen.git
+Navigate into the project directory:
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+cd e-commerce-product-filtering
+Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+npm install
+Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm start
+Open the application in your browser: http://localhost:3000
+
+Open the application in your browser: [http://localhost:3000](http://localhost:3000)
+
+## Usage
+Once the app is running locally, you will see the following sections:
+- **Filters**: The sidebar on the left allows you to filter the products by categories such as "Ideal For", "Occasion", and more.
+- **Product Grid**: The products are displayed in a grid with an option to add them to the wishlist.
+- **Sorting**: You can sort the products by different criteria such as price and popularity.
+
+## Customization
+You can modify the `filters` object in the `Home.js` file to add more filter categories or update existing ones. You can also change the API to fetch data from another source if desired.
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request if you'd like to add features or fix bugs.
+
+## License
+This project is licensed under the MIT License—see the LICENSE file for details.
+
+## Acknowledgements
+- [FakeStoreAPI](https://fakestoreapi.com/) for providing free product data.
+- [React](https://reactjs.org/) for the powerful front-end framework.

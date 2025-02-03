@@ -1,4 +1,4 @@
-// File: D:\web development\mail sender\email-sender\app\layout.js
+// File: E:\Appscrip-task\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
