@@ -51,6 +51,7 @@
 .subscribeButton {
   padding: 8px 16px;
   border: 1px solid #888;
+  color: white;
   background: transparent;
   font-weight: 700;
   border-radius: 5px;
